@@ -6,5 +6,14 @@
 включая цифры и алфавитные символы
 """
 
-if __name__ == '__main__':
-    pass
+import re
+
+chek = True
+par = input('Vvedite parol: ')
+
+while chek:
+    if re.search(r'\d', par) and re.search(r'[a-zA-Z]', par) and len(par) >= 8:
+        print('Parol is enough difficult')
+        chek = False
+    else:
+        par = input('Parol is too easy, try another one: ')

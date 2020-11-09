@@ -8,5 +8,12 @@
 Тебе может понадобиться цикл for и ветвления
 """
 
-if __name__ == '__main__':
-    pass
+for chislo in range(1, 101):
+    if chislo % 3 == 0 and chislo % 5 == 0: 
+        print("zip-zap")
+    elif chislo % 3 == 0:
+        print("zip")
+    elif chislo % 5 == 0:
+        print("zap")
+    else:
+        print(chislo)
